@@ -4,13 +4,14 @@
     <div class="header-wrap" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <div class="overlay"></div>
         <header class="container header">
-            <div class="row">
+            <div class="row" style="position: relative;">
                 <div class="col-md-12">
                     <div class="logo-text animated zoomIn">
                         <h1>{{@blog.title}}</h1>
                         <h2>{{@blog.description}}</h2>
                     </div>
                 </div>
+                <div class="notice-right">Away on vacation! :D&nbsp;&nbsp;&nbsp;<span style="color: yellow;" class="fa fa-sun-o"></span></div>
             </div>
         </header>
     </div>
