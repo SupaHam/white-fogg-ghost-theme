@@ -59,7 +59,7 @@
             if (imagePos < topOfWindow+700) {
                 $(this).addClass("animated zoomIn");
             } else {
-                $(this).removeClass("animated");
+                $(this).removeClass("animated zoomIn");
             }
         });
     });
