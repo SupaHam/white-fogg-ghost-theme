@@ -41,14 +41,14 @@
     $(document).ready(function(){
         $(".post").fitVids();
     });
-    $(document).ready(
+/*    $(document).ready(
 
       function() { 
 
         $("html").niceScroll({cursorcolor:"#DF4949"});
 
       }
-    );
+    ); */
 
 // CSS3 Animation on Post Box
     $(window).scroll(function() {
