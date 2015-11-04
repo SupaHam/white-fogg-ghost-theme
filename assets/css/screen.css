@@ -19,7 +19,7 @@ body {
     height: 100%;
     width: 100%;
     background: url(../images/content-wrap-bg.png);
-    font-family: 'Tinos', serif;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 ::-moz-selection {
     color: #FFF;
