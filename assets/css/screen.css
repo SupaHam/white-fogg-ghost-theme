@@ -82,9 +82,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid #FFF;
     color: #DF4949;
     font-family: 'Lato', sans-serif;
-    -webkit-transition-duration: .7s;
-    -o-transition-duration: .7s;
-    transition-duration: .7s;
+    -webkit-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    transition-duration: .25s;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     border: 2px solid #DF4949;

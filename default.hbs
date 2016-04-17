@@ -21,6 +21,8 @@
     <link href="{{asset "css/bootstrap.css"}}" rel="stylesheet">
     <!-- CSS3 Animations -->
     <link href="{{asset "css/animate.css"}}" rel="stylesheet">
+    <!-- Emojione -->
+    <link href="{{asset "css/emojione.min.css"}}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{asset "css/screen.css"}}" rel="stylesheet">
     <!-- Google Fonts -->
@@ -47,6 +49,20 @@
     {{! JS Script }}
     <!-- jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Emojione -->
+    <script src="{{asset "js/emojione.min.js"}}"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            emojione.imageType = 'svg';
+            emojione.imagePathSVG = "/assets/css/svg/";
+            $('html>body').each(function() {
+                var original = $(this).html();
+                // use .shortnameToImage if only converting shortnames (for slightly better performance)
+                var converted = emojione.shortnameToImage(original);
+                $(this).html(converted);
+            });
+        };
+    </script>
     <!-- Bootstrap -->
     <script src="{{asset "js/bootstrap.min.js"}}"></script>
     <!-- Responsive Videos -->
