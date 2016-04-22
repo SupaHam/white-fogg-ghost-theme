@@ -20,6 +20,7 @@ body {
     width: 100%;
     background: url(../images/content-wrap-bg.png);
     font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1rem;
 }
 ::-moz-selection {
     color: #FFF;
@@ -174,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post {
     margin-bottom: 50px;
-    padding: 50px 70px;
+    padding: 2em 1.5em;
     position: relative;
     background-color: #FFF;
 }
@@ -182,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 .post-title h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 1em 1em;
     font-size: 4em;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
@@ -215,27 +216,28 @@ h1, h2, h3, h4, h5, h6 {
                 -10px 10px 0 #f0f0f0;
 }
 .post-date {
-    width: 70px;
-    height: 70px;
+    width: 5em;
+    height: 5em;
+    margin-left: 3em;
     padding-top: 15px;
     position: absolute;
-    top: -35px;
-    left: -30px;
+    top: 0.2em;
+    left: -3em;
     border: 2px solid #FFF;
-    border-radius: 50%;
+    border-radius: 1em;
     background-color: #DF4949;
     color: #FFF;
-    line-height: 20px;
+    line-height: 1.5em;
     text-align: center;    
 }
 .post-date span {
     display: block;
-    font-size: 26px;
+    font-size: 2em;
     font-weight: bold;
 }
 .post-content {
     color: #50585D;
-    font-size: 21px;
+    text-align: justify;
 }
 .post-content input[type="text"] {
     padding: 5px;
@@ -302,6 +304,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-meta .tooltip {
     margin-top: -10px;
+}
+
+pre {
+    font-size: 0.8em;
 }
 
 /* White Fogg Pagination Styles
@@ -531,7 +537,6 @@ h2.tag-heading small {
     word-wrap: break-word;
   }
   .post-content {
-    font-size: 18px;
     word-wrap: break-word;
   }
   .navbar-brand small {
@@ -539,12 +544,12 @@ h2.tag-heading small {
   }
 }
 @media (min-width: 320px) {
-  .container {
-    width: 300px;
-  }
   .post-title h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     word-wrap: break-word;
+  }
+  .post-content {
+    font-size: 1em;
   }
   .navbar-brand small {
     display: none;
@@ -556,12 +561,31 @@ h2.tag-heading small {
   }
 }
 @media (min-width: 768px) {
+  body {
+    font-size: 1.65em;
+  }
   .container {
     width: 600px;
+  }
+  .post {
+    padding: 3em 4em;
+  }
+  .post-content {
+    font-size: 1.2em;
+  }
+  .post-date {
+      width: 5em;
+      height: 5em;
+      margin-left: 0;
+      border-radius: 50%;
+      top: -35px;
+      left: -30px;
   }
 }
 @media (min-width: 992px) {
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 800px;
   }
 }
