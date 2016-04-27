@@ -250,6 +250,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px 0 30px 0;
     display: block;
 }
+.post-content p {
+    margin: 0 0 1em;
+}
 .post-meta {
     color: #999;
     font-family: 'Lato', sans-serif;
@@ -571,7 +574,7 @@ h2.tag-heading small {
     padding: 3em 4em;
   }
   .post-content {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .post-date {
       width: 5em;
